@@ -62,6 +62,7 @@ jobs:
         run: |
           source ./buildenv.sh ${{ matrix.target }}
           ./scripts/build_dependencies.sh
+          source out/tools/venv/bin/activate
 
       - name: Download target firmware
         run: |
