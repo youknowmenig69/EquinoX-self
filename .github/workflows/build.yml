@@ -47,10 +47,7 @@ jobs:
           source ./buildenv.sh ${{ matrix.target }}
           ./scripts/build_dependencies.sh
           source out/tools/venv/bin/activate
-          export PATH=$PATH:out/tools/venv/bin
-          source ~/.bashrc
-          sudo cp out/tools/venv/bin/samloader /usr/bin/
-          sudo chmod +x /usr/bin/samloader
+          pip3 install git+https://github.com/ananjaser1211/samloader.git
           
       - name: Download target firmware
         run: |
