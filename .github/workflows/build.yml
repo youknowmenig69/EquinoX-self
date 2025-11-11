@@ -1,11 +1,11 @@
-name: Build ProjectNERV
+name: Build EquinoX-self
 
 on:
   workflow_dispatch:
   pull_request:
   push:
     branches:
-      - 'fifteen'
+      - 'master'
 
 jobs:
   build:
