@@ -57,7 +57,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-
+          
+      - name: Build dependencies
+        run: |
+          source ./buildenv.sh ${{ matrix.target }}
+          ./scripts/build_dependencies.sh
 
       - name: Download target firmware
         run: |
