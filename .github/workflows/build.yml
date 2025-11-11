@@ -49,7 +49,7 @@ jobs:
           source out/tools/venv/bin/activate
           export PATH=$PATH:out/tools/venv/bin
           source ~/.bashrc
-          sudo mv out/tools/venv/bin/samloader /usr/bin/
+          sudo cp out/tools/venv/bin/samloader /usr/bin/
           sudo chmod +x /usr/bin/samloader
           
       - name: Download target firmware
