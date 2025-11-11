@@ -57,7 +57,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-          cache: false
 
       - name: Build dependencies
         run: |
