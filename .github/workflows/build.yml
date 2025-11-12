@@ -62,7 +62,6 @@ jobs:
         run: |
           source ./buildenv.sh ${{ matrix.target }}
           ./scripts/build_dependencies.sh
-          source out/tools/venv/bin/activate
           pip3 install git+https://github.com/ananjaser1211/samloader.git
           
       - name: Download target firmware
